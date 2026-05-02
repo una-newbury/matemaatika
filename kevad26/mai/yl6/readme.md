@@ -286,17 +286,6 @@ This is intentionally comprehensive but still realistic for your level — no ex
 (x^n)' = n x^{n-1}
 ```
 
-Kehtib kõigi reaalarvuliste astmete korral.
-
-Erivormid:
-
-```math
-(c)' = 0
-(x)' = 1
-(\sqrt{x})' = \frac{1}{2\sqrt{x}}
-\left(\frac{1}{x}\right)' = -\frac{1}{x^2}
-```
-
 ---
 
 ## 2. **Konstantiga korrutamine**
@@ -393,43 +382,6 @@ Oluline, kui funktsioon on liitfunktsioon.
 
 ```math
 (\csc x)' = -\csc x \cot x
-```
-
----
-
-## 9. **Pöördtrigonomeetrilised funktsioonid**
-
-```math
-(\arcsin x)' = \frac{1}{\sqrt{1 - x^2}}
-```
-
-```math
-(\arccos x)' = -\frac{1}{\sqrt{1 - x^2}}
-```
-
-```math
-(\arctan x)' = \frac{1}{1 + x^2}
-```
-
-```math
-(\arccot x)' = -\frac{1}{1 + x^2}
-```
-
----
-
-## 10. **Hüperboolsed funktsioonid**
-(ilmuvad harvem, aga võivad olla eksamimaterjalis)
-
-```math
-(\sinh x)' = \cosh x
-```
-
-```math
-(\cosh x)' = \sinh x
-```
-
-```math
-(\tanh x)' = \operatorname{sech}^2 x
 ```
 
 ---
