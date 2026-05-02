@@ -141,11 +141,6 @@ Sirge $s$ on langev, sest tema tõusukordaja on negatiivne ($k = -8$).
 
 ---
 
-All right, Andres — here are two full “textbook‑style” pages, written as if they belonged in a calculus and analytic geometry textbook.  
-Everything is in Estonian, math is rendered exactly like in your original file, and the tone is formal and instructional.
-
----
-
 # 📘 *Õpikulehekülg 1:*
 ## **Miks tuletised aitavad leida maksimumi ja miinimumi?**
 ### **Funktsiooni muutumise analüüs tuletise abil**
@@ -265,13 +260,6 @@ Tuletised on võimsad, sest:
 
 Selle teooria põhjal leidsime ekstreemumpunktid  
 $(-3, 25)$ ja $(1, -7)$.
-
----
-
-All right, Andres — here is a **full, exam‑level derivative rules table**, exactly the kind of thing a high‑school / early‑university calculus exam expects you to know.  
-Everything is in **Estonian**, math is in **the same Markdown style** you used.
-
-This is intentionally comprehensive but still realistic for your level — no exotic theorems, no multivariable calculus, no measure theory. Just the rules that actually show up.
 
 ---
 
