@@ -138,3 +138,255 @@ Seega sirge on **langev**.
 
 **Vastus 3:**  
 Sirge $s$ on langev, sest tema tõusukordaja on negatiivne ($k = -8$).
+
+---
+
+All right, Andres — here are two full “textbook‑style” pages, written as if they belonged in a calculus and analytic geometry textbook.  
+Everything is in Estonian, math is rendered exactly like in your original file, and the tone is formal and instructional.
+
+---
+
+# 📘 *Õpikulehekülg 1:*
+## **Miks tuletised aitavad leida maksimumi ja miinimumi?**
+### **Funktsiooni muutumise analüüs tuletise abil**
+
+### 1. Funktsiooni kasvamine ja kahanemine
+
+Funktsiooni tuletis
+
+```math
+f'(x)
+```
+
+annab meile info selle kohta, kuidas funktsioon antud punktis muutub:
+
+- Kui
+  ```math
+  f'(x) > 0
+  ```  
+  siis funktsioon **kasvab**.
+- Kui
+  ```math
+  f'(x) < 0
+  ```  
+  siis funktsioon **kahaneb**.
+- Kui
+  ```math
+  f'(x) = 0
+  ```  
+  siis funktsioonil võib olla **ekstreemum** (maksimum või miinimum).
+
+Ekstreemum tekib seal, kus kasvamine muutub kahanemiseks või vastupidi.  
+Seetõttu on tuletise nullkohad kriitilise tähtsusega.
+
+---
+
+### 2. Kuidas tuletise nullkohad viivad ekstreemumiteni?
+
+Kui funktsioonil on punkt $x = a$, kus
+
+```math
+f'(a) = 0,
+```
+
+siis funktsioon “pöörab suunda”.  
+Et teha kindlaks, kas tegemist on maksimumi või miinimumiga, kasutatakse **teist tuletist**:
+
+- Kui
+  ```math
+  f''(a) > 0
+  ```  
+  siis graafik on kumer üles → **miinimum**.
+- Kui
+  ```math
+  f''(a) < 0
+  ```  
+  siis graafik on kumer alla → **maksimum**.
+
+Seda nimetatakse **teise tuletise testiks**.
+
+---
+
+### 3. Milliseid tuletamise tehnikaid kasutatakse?
+
+Antud funktsioon oli:
+
+```math
+f(x) = x^3 + 3x^2 - 9x - 2
+```
+
+Selle tuletamiseks kasutasime järgmisi põhireegleid:
+
+#### **(1) Astmefunktsiooni tuletamine**
+
+```math
+(x^n)' = n x^{n-1}
+```
+
+Näited meie funktsioonist:
+
+```math
+(x^3)' = 3x^2
+```
+
+```math
+(3x^2)' = 6x
+```
+
+#### **(2) Konstanti korrutamise reegel**
+
+```math
+(c \cdot g(x))' = c \cdot g'(x)
+```
+
+Näide:
+
+```math
+-9x → tuletis = -9
+```
+
+#### **(3) Liitmise ja lahutamise reegel**
+
+```math
+(f(x) + g(x))' = f'(x) + g'(x)
+```
+
+Kõik liikmed tuletatakse eraldi ja liidetakse kokku.
+
+---
+
+### 4. Kokkuvõte
+
+Tuletised on võimsad, sest:
+
+- need näitavad funktsiooni kasvamise ja kahanemise alasid;
+- tuletise nullkohad annavad ekstreemumite kandidaadid;
+- teine tuletis eristab maksimumi ja miinimumi.
+
+Selle teooria põhjal leidsime ekstreemumpunktid  
+$(-3, 25)$ ja $(1, -7)$.
+
+---
+
+---
+
+# 📘 *Õpikulehekülg 2:*
+## **Kuidas leida sirge võrrand kahe punkti kaudu?**
+### **Lineaarse seose mõistmine ja tõusu tõlgendamine**
+
+### 1. Sirge määramine kahe punkti abil
+
+Sirge on kõige lihtsam funktsioonitüüp:
+
+```math
+y = kx + b
+```
+
+Selle määramiseks on vaja kahte asja:
+
+- **tõusukordaja** $k$
+- **vabaliige** $b$
+
+Kui sirge läbib kahte punkti  
+$(x_1, y_1)$ ja $(x_2, y_2)$,  
+siis tõusukordaja leitakse valemiga:
+
+```math
+k = \frac{y_2 - y_1}{x_2 - x_1}
+```
+
+See näitab, kui palju $y$ muutub ühe ühiku $x$ muutuse kohta.
+
+---
+
+### 2. Miks see valem töötab?
+
+Sirge on funktsioon, mille muutumine on **ühtlane**.  
+See tähendab:
+
+- kui $x$ suureneb ühe võrra,
+- siis $y$ suureneb või väheneb alati sama palju.
+
+Seega on tõusukordaja lihtsalt:
+
+```math
+\text{muutus y-s} \div \text{muutus x-is}
+```
+
+See on analoogne “kiirusega”:  
+kui kiiresti $y$ muutub võrreldes $x$-iga.
+
+---
+
+### 3. Sirge võrrandi koostamine
+
+Kui tõusukordaja $k$ on teada, kasutame **punkt-kaldenurga kuju**:
+
+```math
+y - y_1 = k(x - x_1)
+```
+
+See on sirge üldkuju, mis töötab iga punkti korral.
+
+Meie ülesandes kasutasime punkti $(-3, 25)$:
+
+```math
+y - 25 = -8(x + 3)
+```
+
+Sealt saime:
+
+```math
+y = -8x + 1
+```
+
+---
+
+### 4. Kuidas otsustada, kas sirge on tõusev või langev?
+
+Sirge kuju:
+
+```math
+y = kx + b
+```
+
+Tõlgendus:
+
+- Kui
+  ```math
+  k > 0
+  ```  
+  → sirge on **tõusev** (vasakult paremale üles).
+- Kui
+  ```math
+  k < 0
+  ```  
+  → sirge on **langev** (vasakult paremale alla).
+- Kui
+  ```math
+  k = 0
+  ```  
+  → sirge on **horisontaalne**.
+
+Meie sirgel:
+
+```math
+k = -8
+```
+
+See tähendab, et sirge on **selgelt langev**.
+
+---
+
+### 5. Kokkuvõte
+
+Selle peatüki põhiteadmised:
+
+- Sirge tõusukordaja näitab muutumise kiirust.
+- Kahe punkti kaudu saab alati määrata sirge.
+- Negatiivne tõusukordaja tähendab langevat sirget.
+- Punkt-kaldenurga kuju on universaalne ja mugav.
+
+Need põhimõtted võimaldasid meil koostada sirge, mis läbib funktsiooni ekstreemumpunkte.
+
+---
