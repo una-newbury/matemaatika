@@ -361,11 +361,11 @@ Oluline, kui funktsioon on liitfunktsioon.
 ## 8. **Trigonomeetrilised funktsioonid**
 
 ```math
-(\sin  x)' = \cos x
+(\sin x)' = \cos x
 ```
 
 ```math
-(\cos  x)' = -\sin x
+(\cos x)' = -\sin x
 ```
 
 ---
