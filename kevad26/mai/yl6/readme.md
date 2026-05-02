@@ -1,10 +1,6 @@
 Ülesanne 6. (10 punkti)
 
-On antud funktsioon
-
-```math
-f(x) = x^3 + 3x^2 - 9x - 2
-```
+On antud funktsioon $f(x) = x^3 + 3x^2 - 9x - 2$
 
 1. Leidke funktsiooni $f(x)$ graafiku maksimum- ja miinimumpunkti koordinaadid.
 2. Sirge $s$ läbib funktsiooni $f(x)$ graafiku ekstreemumpunkte. Koostage sirge $s$ võrrand.
@@ -28,7 +24,7 @@ Leidmiseks võtame tuletise:
 f'(x) = 3x^2 + 6x - 9
 ```
 
-Leiame kriitilised punktid, lahendades võrrandi \(f'(x) = 0\):
+Leiame kriitilised punktid, lahendades võrrandi $f'(x) = 0$:
 
 ```math
 3x^2 + 6x - 9 = 0
@@ -72,38 +68,38 @@ f''(x) = 6x + 6
 f''(1) = 6\cdot 1 + 6 = 12 > 0
 ```
 
-Seega \(x = 1\) juures on **miinimumpunkt**.
+Seega $x = 1$ juures on **miinimumpunkt**.
 
 ```math
 f''(-3) = 6\cdot (-3) + 6 = -18 + 6 = -12 < 0
 ```
 
-Seega \(x = -3\) juures on **maksimumpunkt**.
+Seega $x = -3$ juures on **maksimumpunkt**.
 
 **Vastus 1:**  
-Maksimum: \((-3,\ 25)\)  
-Miinimum: \((1,\ -7)\)
+Maksimum: $(-3,\ 25)$  
+Miinimum: $(1,\ -7)$
 
 ![img.png](img.png)
 ---
 
-### 2. Sirge \(s\) võrrand, mis läbib ekstreemumpunkte
+### 2. Sirge $s$ võrrand, mis läbib ekstreemumpunkte
 
-Ekstreemumpunktid on \((-3, 25)\) ja \((1, -7)\). Koostame sirge, mis läbib neid kahte punkti.
+Ekstreemumpunktid on $(-3, 25)$ ja $(1, -7)$. Koostame sirge, mis läbib neid kahte punkti.
 
-Leidame tõusukordaja \(k\):
+Leidame tõusukordaja $k$:
 
 ```math
 k = \frac{y_2 - y_1}{x_2 - x_1} = \frac{-7 - 25}{1 - (-3)} = \frac{-32}{4} = -8
 ```
 
-Kasutame punkt-kaldenurga kuju, näiteks punktiga \((-3, 25)\):
+Kasutame punkt-kaldenurga kuju, näiteks punktiga $(-3, 25)$:
 
 ```math
 y - 25 = -8(x + 3)
 ```
 
-Avaldame \(y\):
+Avaldame $y$:
 
 ```math
 y - 25 = -8x - 24
@@ -111,7 +107,7 @@ y = -8x + 1
 ```
 
 **Vastus 2:**  
-Sirge \(s\) võrrand on
+Sirge $s$ võrrand on
 
 ```math
 y = -8x + 1
@@ -119,12 +115,12 @@ y = -8x + 1
 
 ---
 
-### 3. Kas sirge \(s\) on tõusev või langev?
+### 3. Kas sirge $s$ on tõusev või langev?
 
-Sirge üldkujul \(y = kx + b\) on:
+Sirge üldkujul $y = kx + b$ on:
 
-- **tõusev**, kui \(k > 0\)
-- **langev**, kui \(k < 0\)
+- **tõusev**, kui $k > 0$
+- **langev**, kui $k < 0$
 
 Meie sirgel
 
@@ -141,4 +137,4 @@ k = -8 < 0
 Seega sirge on **langev**.
 
 **Vastus 3:**  
-Sirge \(s\) on langev, sest tema tõusukordaja on negatiivne (\(k = -8\)).
+Sirge $s$ on langev, sest tema tõusukordaja on negatiivne ($k = -8$).
