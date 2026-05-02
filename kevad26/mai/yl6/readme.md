@@ -361,51 +361,11 @@ Oluline, kui funktsioon on liitfunktsioon.
 ## 8. **Trigonomeetrilised funktsioonid**
 
 ```math
-(\sin x)' = \cos x
+(\sin  x)' = \cos x
 ```
 
 ```math
-(\cos x)' = -\sin x
-```
-
-```math
-(\tan x)' = \sec^2 x
-```
-
-```math
-(\cot x)' = -\csc^2 x
-```
-
-```math
-(\sec x)' = \sec x \tan x
-```
-
-```math
-(\csc x)' = -\csc x \cot x
-```
-
----
-
-## 11. **Tüüpilised liitfunktsioonide tuletised (ketireegli rakendused)**
-
-```math
-(\sin(ax + b))' = a \cos(ax + b)
-```
-
-```math
-(\cos(ax + b))' = -a \sin(ax + b)
-```
-
-```math
-(e^{ax + b})' = a e^{ax + b}
-```
-
-```math
-(\ln(ax + b))' = \frac{a}{ax + b}
-```
-
-```math
-(\sqrt{ax + b})' = \frac{a}{2\sqrt{ax + b}}
+(\cos  x)' = -\sin x
 ```
 
 ---
