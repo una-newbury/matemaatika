@@ -268,6 +268,213 @@ $(-3, 25)$ ja $(1, -7)$.
 
 ---
 
+All right, Andres — here is a **full, exam‑level derivative rules table**, exactly the kind of thing a high‑school / early‑university calculus exam expects you to know.  
+Everything is in **Estonian**, math is in **the same Markdown style** you used.
+
+This is intentionally comprehensive but still realistic for your level — no exotic theorems, no multivariable calculus, no measure theory. Just the rules that actually show up.
+
+---
+
+# 📘 Tuletiste põhivalemite tabel
+## **(Eksamitase: gümnaasium / ülikooli 1. kursus)**
+
+---
+
+## 1. **Astmefunktsioonid**
+
+```math
+(x^n)' = n x^{n-1}
+```
+
+Kehtib kõigi reaalarvuliste astmete korral.
+
+Erivormid:
+
+```math
+(c)' = 0
+(x)' = 1
+(\sqrt{x})' = \frac{1}{2\sqrt{x}}
+\left(\frac{1}{x}\right)' = -\frac{1}{x^2}
+```
+
+---
+
+## 2. **Konstantiga korrutamine**
+
+```math
+(c \cdot f(x))' = c \cdot f'(x)
+```
+
+---
+
+## 3. **Liitmise ja lahutamise reegel**
+
+```math
+(f(x) + g(x))' = f'(x) + g'(x)
+```
+
+```math
+(f(x) - g(x))' = f'(x) - g'(x)
+```
+
+---
+
+## 4. **Korrutisreegel (product rule)**
+
+```math
+(f(x)g(x))' = f'(x)g(x) + f(x)g'(x)
+```
+
+---
+
+## 5. **Jagatisreegel (quotient rule)**
+
+```math
+\left(\frac{f(x)}{g(x)}\right)' =
+\frac{f'(x)g(x) - f(x)g'(x)}{(g(x))^2}
+```
+
+---
+
+## 6. **Keti reegel (chain rule)**
+Oluline, kui funktsioon on liitfunktsioon.
+
+```math
+(f(g(x)))' = f'(g(x)) \cdot g'(x)
+```
+
+---
+
+## 7. **Eksponentsiaal- ja logaritmfunktsioonid**
+
+### Eksponent:
+
+```math
+(e^x)' = e^x
+```
+
+```math
+(a^x)' = a^x \ln(a)
+```
+
+### Logaritm:
+
+```math
+(\ln x)' = \frac{1}{x}
+```
+
+```math
+(\log_a x)' = \frac{1}{x \ln(a)}
+```
+
+---
+
+## 8. **Trigonomeetrilised funktsioonid**
+
+```math
+(\sin x)' = \cos x
+```
+
+```math
+(\cos x)' = -\sin x
+```
+
+```math
+(\tan x)' = \sec^2 x
+```
+
+```math
+(\cot x)' = -\csc^2 x
+```
+
+```math
+(\sec x)' = \sec x \tan x
+```
+
+```math
+(\csc x)' = -\csc x \cot x
+```
+
+---
+
+## 9. **Pöördtrigonomeetrilised funktsioonid**
+
+```math
+(\arcsin x)' = \frac{1}{\sqrt{1 - x^2}}
+```
+
+```math
+(\arccos x)' = -\frac{1}{\sqrt{1 - x^2}}
+```
+
+```math
+(\arctan x)' = \frac{1}{1 + x^2}
+```
+
+```math
+(\arccot x)' = -\frac{1}{1 + x^2}
+```
+
+---
+
+## 10. **Hüperboolsed funktsioonid**
+(ilmuvad harvem, aga võivad olla eksamimaterjalis)
+
+```math
+(\sinh x)' = \cosh x
+```
+
+```math
+(\cosh x)' = \sinh x
+```
+
+```math
+(\tanh x)' = \operatorname{sech}^2 x
+```
+
+---
+
+## 11. **Tüüpilised liitfunktsioonide tuletised (ketireegli rakendused)**
+
+```math
+(\sin(ax + b))' = a \cos(ax + b)
+```
+
+```math
+(\cos(ax + b))' = -a \sin(ax + b)
+```
+
+```math
+(e^{ax + b})' = a e^{ax + b}
+```
+
+```math
+(\ln(ax + b))' = \frac{a}{ax + b}
+```
+
+```math
+(\sqrt{ax + b})' = \frac{a}{2\sqrt{ax + b}}
+```
+
+---
+
+## 12. **Kõige olulisemad reeglid, mis olid vajalikud sinu ülesande jaoks**
+
+Sinu konkreetse ülesande lahendamiseks piisas kolmest reeglist:
+
+### (1) Astmefunktsiooni tuletamine
+```math
+(x^3)' = 3x^2
+```
+
+### (2) Konstantiga korrutamine
+```math
+(3x^2)' = 6x
+```
+
+### (3) Liitmise ja lahutamise reegel
+Kõik liikmed tuletatakse eraldi ja liidetakse kokku.
+
 ---
 
 # 📘 *Õpikulehekülg 2:*
