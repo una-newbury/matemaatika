@@ -28,8 +28,6 @@ Asendame:
 
 ### Osa 2: Lahenda võrrand ja võrratus
 
-![img.png](img.png)
-
 **Võrrand** $2\cos x = 1$, kus $x \in [0;\, 2\pi]$
 
 ```math
@@ -57,6 +55,8 @@ Graafikult on näha, et $y = 2\cos x$ jääb joone $y = 1$ alla vahemikus:
 ```math
 x \in \left(\frac{\pi}{3};\;\frac{5\pi}{3}\right)
 ```
+
+![img.png](img.png)
 
 ---
 ---
