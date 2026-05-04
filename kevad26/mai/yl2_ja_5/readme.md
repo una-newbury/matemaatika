@@ -14,23 +14,23 @@
 
 1. **Roheliste arv ja protsent.**  
    Arvutame roheliste arvu:
-   ```math
-   \text{rohelised} = 50 - (15 + 11 + 8 + 9) = 50 - 43 = 7
-   ```
+```math
+\text{rohelised} = 50 - (15 + 11 + 8 + 9) = 50 - 43 = 7
+```
    Protsent:
-   ```math
-   \text{protsent} = \frac{7}{50}\cdot 100\% = 14\%
-   ```
+```math
+\text{protsent} = \frac{7}{50}\cdot 100\% = 14\%
+```
 
 2. **Tõenäosus, et mõlemad valitud kommid on sinised (ilma asendamiseta).**  
    Esimese valiku tõenäosus on $15/50$. Kui esimene on sinine, jääb siniseid $14$ ja kokku $49$ kommi. Seega:
-   ```math
-   P(\text{mõlemad sinised}) = \frac{15}{50}\cdot\frac{14}{49} = \frac{210}{2450} = \frac{3}{35}
-   ```
+```math
+P(\text{mõlemad sinised}) = \frac{15}{50}\cdot\frac{14}{49} = \frac{210}{2450} = \frac{3}{35}
+```
    Või protsendina:
-   ```math
-   \frac{3}{35}\approx 0{,}085714\quad\text{ehk}\quad 8{,}5714\%
-   ```
+```math
+\frac{3}{35}\approx 0{,}085714\quad\text{ehk}\quad 8{,}5714\%
+```
 
 **Vastus kokku:** rohelisi on **7** tk ehk **14%**; mõlema sinise tõenäosus on **$\dfrac{3}{35}$** (umbes **8,57%**).
 
@@ -46,54 +46,54 @@
 
 1. **Määrame muutujad ja võrrandid.**  
    Olgu $f$ isa praegune vanus ja $c$ lapse praegune vanus. Antud on:
-   ```math
-   f + c = 41
-   ```
+```math
+f + c = 41
+```
    ning nelja aasta pärast:
-   ```math
-   f + 4 = 6\cdot (c + 4)
-   ```
+```math
+f + 4 = 6\cdot (c + 4)
+```
 
 2. **Lahendame süsteemi.**  
    Teisest võrrandist:
-   ```math
-   f + 4 = 6c + 24 \Rightarrow f = 6c + 20
-   ```
+```math
+f + 4 = 6c + 24 \Rightarrow f = 6c + 20
+```
    Asendame esimesse:
-   ```math
-   6c + 20 + c = 41 \Rightarrow 7c + 20 = 41 \Rightarrow 7c = 21 \Rightarrow c = 3
-   ```
+```math
+6c + 20 + c = 41 \Rightarrow 7c + 20 = 41 \Rightarrow 7c = 21 \Rightarrow c = 3
+```
    Siis:
-   ```math
-   f = 41 - c = 41 - 3 = 38
-   ```
+```math
+f = 41 - c = 41 - 3 = 38
+```
 
    **Seega:** laps on praegu **3** aastat ja isa **38** aastat vana.
 
 3. **Ema vanus (osa 2).**  
    Aasta tagasi oli kolme inimese vanuste summa 70:
-   ```math
-   (m - 1) + (f - 1) + (c - 1) = 70
-   ```
+```math
+(m - 1) + (f - 1) + (c - 1) = 70
+```
    Kus $m$ on ema praegune vanus. Lihtsustame:
-   ```math
-   m + f + c - 3 = 70 \Rightarrow m = 73 - (f + c)
-   ```
+```math
+m + f + c - 3 = 70 \Rightarrow m = 73 - (f + c)
+```
    Kuna $f + c = 41$:
-   ```math
-   m = 73 - 41 = 32
-   ```
+```math
+m = 73 - 41 = 32
+```
    **Ema on praegu 32 aastat vana.**
 
 4. **Millal kohtusid (osa 3).**  
    Ema ja isa praegused vanused on $m=32$ ja $f=38$, summa $m+f=70$. Otsime $t$ aastat tagasi, kui nende vanuste summa oli 44:
-   ```math
-   (f - t) + (m - t) = 44 \Rightarrow f + m - 2t = 44
-   ```
+```math
+(f - t) + (m - t) = 44 \Rightarrow f + m - 2t = 44
+```
    Asendame $f+m=70$:
-   ```math
-   70 - 2t = 44 \Rightarrow 2t = 26 \Rightarrow t = 13
-   ```
+```math
+70 - 2t = 44 \Rightarrow 2t = 26 \Rightarrow t = 13
+```
    **Nad kohtusid 13 aastat tagasi.**
 
 **Vastus kokku:** isa 38 a, laps 3 a; ema praegu 32 a; nad kohtusid **13** aastat tagasi.
@@ -108,36 +108,36 @@ Allpool on lühike, selge ja praktiline valemite- ja meetodite kogumik, mis aita
 
 #### Protsendid ja osakaalud
 - **Protsendi leidmine:** kui osa on $a$ ja kogu $A$, siis protsent on
-  ```math
-  \text{protsent} = \frac{a}{A}\cdot 100\%
-  ```
+```math
+\text{protsent} = \frac{a}{A}\cdot 100\%
+```
 - **Osa leidmine protsendi järgi:** kui protsent on $p\%$ ja kogu $A$, siis osa on
-  ```math
-  a = \frac{p}{100}\cdot A
-  ```
+```math
+a = \frac{p}{100}\cdot A
+```
 
 ---
 
 #### Tõenäosus (ilma asendamiseta)
 - Kui valime järjest kaks eset ilma tagasi panemata, siis tõenäosus, et esimene on sündmus $E_1$ ja teine $E_2$:
-  ```math
-  P(E_1\ \text{ja}\ E_2) = P(E_1)\cdot P(E_2\mid E_1)
-  ```
+```math
+P(E_1\ \text{ja}\ E_2) = P(E_1)\cdot P(E_2\mid E_1)
+```
 - Näide: $k$ soodsat esimest valikut ja $n$ kokku:
-  ```math
-  P_1 = \frac{k}{n},\quad P_2 = \frac{k-1}{n-1}
-  ```
+```math
+P_1 = \frac{k}{n},\quad P_2 = \frac{k-1}{n-1}
+```
 
 ---
 
 #### Lineaarsed võrrandid ja süsteemid (vanuseülesanded)
 - Kui on kaks inimest ja antud on summa ning mingi suhe tulevikus või minevikus, kasuta muutujad ja lahenda lineaarne süsteem:
-  ```math
-  \begin{cases}
-  x + y = S\\
-  x + a = r\cdot (y + a)
-  \end{cases}
-  ```
+```math
+\begin{cases}
+x + y = S\\
+x + a = r\cdot (y + a)
+\end{cases}
+```
   Lahenda teisest $x$ või $y$ väljendades ja asenda esimesse.
 
 ---
@@ -150,9 +150,9 @@ Allpool on lühike, selge ja praktiline valemite- ja meetodite kogumik, mis aita
 
 #### Ruutfunktsioonid ja faktoreerimine
 - Kui tekib ruutvõrrand $ax^2+bx+c=0$, kasuta diskriminandi ja ruutvõrrandi valemit:
-  ```math
-  D = b^2 - 4ac,\quad x = \frac{-b\pm\sqrt{D}}{2a}
-  ```
+```math
+D = b^2 - 4ac,\quad x = \frac{-b\pm\sqrt{D}}{2a}
+```
 - Faktoreerimine: otsi kaks arvu, mille korrutis on $ac$ ja summa $b$.
 
 ---
