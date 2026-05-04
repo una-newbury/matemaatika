@@ -28,6 +28,8 @@ Asendame:
 
 ### Osa 2: Lahenda võrrand ja võrratus
 
+![img.png](img.png)
+
 **Võrrand** $2\cos x = 1$, kus $x \in [0;\, 2\pi]$
 
 ```math
