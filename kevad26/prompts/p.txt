@@ -1,7 +1,7 @@
-can you extract exercises and solutions (if present - if not solve yourself) from here. then can you double check is it actually correct, if solution was provided (alert me if not, suggest changes, I will have a look myself) . emit your output so that math is expressed like in "math" block below, and inline math between dollar signs (I will render it via github readme). after solutions, add as if pages from textbook, necessary for this type of exercises, formulas and all. Write the text in Estonian . It is for someone prepping for an exam (attempting to go to uni), but her math is weak tbh
+claude:
 
-```
+can you extract exercises and solutions (if present - if not solve yourself) from here. then can you double check is it actually correct, if solution was provided (alert me if not, suggest changes, I will have a look myself) . emit your output so that math is expressed like in "math" block below, and inline math between dollar signs (I will render it via github readme). after solutions, add as if pages from textbook, necessary for this type of exercises, formulas and all. Write the text in Estonian . It is for someone prepping for an exam (attempting to go to uni), but her math is weak tbh
 ```math
 f(x) = ax^2 + bx + c,\quad a \neq 0
 ```
-```
+
