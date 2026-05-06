@@ -34,22 +34,19 @@ A_3 = A_0 \cdot q^3 = 32\,000 \cdot 1{,}0225^3
 Arvutame $1{,}0225^3$ (ligikaudselt):
 
 ```math
-1{,}0225^2 \approx 1{,}04550625
+1{,}0225^3 \approx 1{,}069
 ```
 
-```math
-1{,}04550625 \cdot 1{,}0225 \approx 1{,}0685
-```
 
 Seega:
 ```math
-A_3 \approx 32\,000 \cdot 1{,}0685 \approx 34\,192
+A_3 \approx 32\,000 \cdot 1{,}069 = 34\,208
 ```
 
 See on **väärtus 3 aasta pärast**. Küsimus: *mitme euro võrra suureneb* väärtus?
 
 ```math
-\Delta A = A_3 - A_0 \approx 34\,192 - 32\,000 = 2\,192
+\Delta A = A_3 - A_0 \approx 34\,208 - 32\,000 = 2\,208
 ```
 
 **Vastus 1. ülesandele:** kinnisvara väärtus suureneb kolme aastaga ligikaudu **2 192 euro võrra**.
