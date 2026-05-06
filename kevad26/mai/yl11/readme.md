@@ -1,246 +1,413 @@
-**Lühike vastus:** Allpool on ülesanne täpselt kirjas, seejärel põhjalikud samm‑sammult lahendused, iga sammile on lisatud viide õpikulehelt pärit valemile; lõpus on pikem „õpikuleht“ jada‑valemitega (aritmeetiline, geomeetriline ja üldised jada‑mõisted). **Oluline:** matemaatika inline‑avaldised on $...$ ja ridade kaupa kujutatud `math` plokkides.   [Physics & Maths Tutor](https://pmt.physicsandmathstutor.com/download/Maths/A-level/Pure/Sequences-and-Series-2/Cheat-Sheets/Sequences%20and%20Series.pdf)  [allen.in](https://allen.in/jee/maths/arithmetic-and-geometric-sequence)
+### Ülesanne 11
 
-### Ülesanne 11. (10 punkti)
+**1.** Andrus võitis lotoga 48 000 eurot ja kasutas sellest kaks kolmandikku kinnisvara ostuks. Mitme euro võrra suureneb ostetud kinnisvara väärtus kolme aastaga eeldusel, et kinnisvara väärtus kasvab iga aastaga 2,25% võrra?
 
-**1.** Andrus võitis lotoga 48 000 eurot ja kasutas sellest kaks kolmandikku kinnisvara ostuks. Mitme euro võrra suureneb ostetud kinnisvara väärtus kolme aastaga eeldusel, et kinnisvara väärtus kasvab iga aastaga $2{,}25\%$ võrra?
-
-**2.** Lahendage võrrand $ \log_4(3-x)+\log_4(x+2)=1$.
+**2.** Lahendage võrrand $\log_4(3 - x) + \log_4(x + 2) = 1$.
 
 ---
 
-## Lahendused (sammud ja viited õpikulehele)
+## 1. ülesanne – lahendus
 
-### Ülesanne 1 — väärtuse kasv
-**Ülesande tekst:** $48\,000$ eurot; ostuks kasutatud osa $ \tfrac{2}{3} $; aastane kasv $2{,}25\%$; aeg $3$ aastat.
+**Andmed:**
 
-**Samm 1 — algsumma ostuks.** Kasutame lihtsat korrutamist (õpik: geomeetrilise kasvu rakendamiseks algväärtus).
-```math
-S_0 = \tfrac{2}{3}\cdot 48000 = 32000
-```
-*(Valem viide: algväärtuse leidmine; õpikuleht, jada/reaalsed rakendused.)*   [Mathematics LibreTexts](https://math.libretexts.org/Bookshelves/Algebra/College_Algebra_and_Trigonometry_%28Beveridge%29/06%3A_Sequences_and_Series/6.02%3A_Arithmetic_and_Geometric_Sequences)
+- Võidusumma: $48\,000$ eurot
+- Kaks kolmandikku kinnisvara ostuks:
+  ```math
+  \frac{2}{3} \cdot 48\,000 = 32\,000
+  ```  
+  Seega algväärtus $A_0 = 32\,000$ eurot.
+- Aastane kasv: $2{,}25\% = 0{,}0225$
+- Aastate arv: $n = 3$
 
-**Samm 2 — aastane kasvufaktor.** Kui kasv $p=2{,}25\%$, siis kasvufaktor $q=1+p=1{,}0225$. (Õpik: protsendi teisendamine kasvufaktoriks.)   [allen.in](https://allen.in/jee/maths/arithmetic-and-geometric-sequence)
+Kinnisvara väärtus kasvab igal aastal sama protsendi võrra ? see on **geomeetriline jada** (või liitintressi valem).
 
-**Samm 3 — kolmeaastane väärtus (geomeetriline kordne kasv).** Kasutame geomeetrilise kasvufunktsiooni $S_n = S_0\cdot q^n$.
-```math
-S_3 = S_0\cdot 1{,}0225^3
-```
-*(Valem viide: geomeetrilise jada üldliige $g_n=g_1\cdot q^{n-1}$; siin kordne rakendus ajapikkusega 3.)*   [Physics & Maths Tutor](https://pmt.physicsandmathstutor.com/download/Maths/A-level/Pure/Sequences-and-Series-2/Cheat-Sheets/Sequences%20and%20Series.pdf)  [allen.in](https://allen.in/jee/maths/arithmetic-and-geometric-sequence)
-
-**Samm 4 — kasv eurodes.**
-```math
-\Delta S = S_3 - S_0 = S_0\bigl(1{,}0225^3-1\bigr)
-```
-Asendame $S_0=32000$ ja arvutame ligikaudu:
-```math
-1{,}0225^3 \approx 1{,}0686
-```
-```math
-\Delta S \approx 32000\cdot 0{,}0686 \approx 2195{,}20
-```
-**Vastus:** kinnisvara väärtus suureneb umbes **$2195{,}20\ \text{€}$** kolme aastaga. (Arvutuslik ligikaudne tulemus; täpsema väärtuse saab kalkulaatoriga.)   [allen.in](https://allen.in/jee/maths/arithmetic-and-geometric-sequence)
-
----
-
-## Õpikuleht (laiendatud): mis on jada ja peamised valemid
-- **Jada (sequence)** on järjestatud elementide rida; **seeria (series)** on nende elementide summa.   [Physics & Maths Tutor](https://pmt.physicsandmathstutor.com/download/Maths/A-level/Pure/Sequences-and-Series-2/Cheat-Sheets/Sequences%20and%20Series.pdf)  [Mathematics LibreTexts](https://math.libretexts.org/Bookshelves/Algebra/College_Algebra_and_Trigonometry_%28Beveridge%29/06%3A_Sequences_and_Series/6.02%3A_Arithmetic_and_Geometric_Sequences)
-- **Aritmeetiline jada:** $a_n=a_1+(n-1)d$, summa $S_n=\dfrac{n}{2}(2a_1+(n-1)d)$.   [Physics & Maths Tutor](https://pmt.physicsandmathstutor.com/download/Maths/A-level/Pure/Sequences-and-Series-2/Cheat-Sheets/Sequences%20and%20Series.pdf)
-- **Geomeetriline jada:** $g_n=g_1\cdot q^{\,n-1}$, summa $S_n=g_1\cdot\dfrac{1-q^n}{1-q}$ ($q\neq1$), lõpmatu summa $S_\infty=\dfrac{g_1}{1-q}$ kui $|q|<1$.   [allen.in](https://allen.in/jee/maths/arithmetic-and-geometric-sequence)  [Brilliant](https://brilliant.org/wiki/arithmetic-geometric-progression/)
-
----
-
-### Ülesanne 11. (10 punkti)
-
-**1.** Andrus võitis lotoga 48?000 eurot ja kasutas sellest kaks kolmandikku kinnisvara ostuks. Mitme euro võrra suureneb ostetud kinnisvara väärtus kolme aastaga eeldusel, et kinnisvara väärtus kasvab iga aastaga $2{,}25\%$ võrra?
-
-**2.** Lahendage võrrand $ \log_4(3-x)+\log_4(x+2)=1$.
-
----
-
-## Lahendused (põhjalikult, iga sammile viide õpikulehelt)
-
-### Ülesanne 1 — väärtuse kasv (täpne samm-sammult lahendus)
-
-**Ülesande tekst kokku:** algsumma €$48\,000$, ostuks kasutatud osa $ \tfrac{2}{3} $, aastane kasv $2{,}25\%$, aeg $3$ aastat.
-
-**Samm 1 — ostuks kasutatud summa leidmine.**  
-Kasutame lihtsat korrutamist: ostuks $S_0 = \tfrac{2}{3}\cdot 48000$.
-```math
-S_0 = \tfrac{2}{3}\cdot 48000 = 32000
-```
-**(Õpikuleht viide:** *Protsendid ja algväärtuse leidmine; aritmeetika põhitehe.*)
-
-**Samm 2 — protsendi teisendamine kasvufaktoriks.**  
-Kui aastane kasv on $p=2{,}25\%$, siis kasvufaktor $q=1+p=1{,}0225$.
+Aastane kasvutegur:
 ```math
 q = 1 + 0{,}0225 = 1{,}0225
 ```
-**(Õpikuleht viide:** *Protsentide teisendamine kümnendmurdudeks; geomeetrilise kasvu mõiste.*)
 
-**Samm 3 — kolmeaastane väärtus geomeetrilise kasvu valemi abil.**  
-Geomeetrilise kasvu valem: $S_n = S_0\cdot q^n$. Siin $n=3$.
+Väärtus 3 aasta pärast:
 ```math
-S_3 = S_0\cdot 1{,}0225^3
+A_3 = A_0 \cdot q^3 = 32\,000 \cdot 1{,}0225^3
 ```
-**(Õpikuleht viide:** *Geomeetriline jada / kordne kasv: $g_n=g_1\cdot q^{n-1}$ või ajas kasvuks $S_n=S_0 q^n$.)*
 
-**Samm 4 — kasv eurodes (erinevus).**
-```math
-\Delta S = S_3 - S_0 = S_0\bigl(1{,}0225^3-1\bigr)
-```
-Asendame $S_0=32000$:
-```math
-\Delta S = 32000\bigl(1{,}0225^3-1\bigr)
-```
-**(Õpikuleht viide:** *Geomeetrilise kasvu rakendamine ja muutuse (diferentsi) leidmine.)*
+Arvutame $1{,}0225^3$ (ligikaudselt):
 
-**Samm 5 — numbriline ligikaudne arvutus.**  
-Arvutame $1{,}0225^3$ ligikaudu:
 ```math
-1{,}0225^3 \approx 1{,}0225\cdot1{,}0225\cdot1{,}0225 \approx 1{,}0686
+1{,}0225^2 \approx 1{,}04550625
 ```
-Seega
-```math
-\Delta S \approx 32000\cdot 0{,}0686 \approx 2195{,}20
-```
-**(Õpikuleht viide:** *Lõplik arvutus; ümardamine rahalistes ühikutes.)*
 
-**Lõplik vastus:** kinnisvara väärtus suureneb umbes **$2195{,}20\ \text{€}$** kolme aastaga.
+```math
+1{,}04550625 \cdot 1{,}0225 \approx 1{,}0685
+```
+
+Seega:
+```math
+A_3 \approx 32\,000 \cdot 1{,}0685 \approx 34\,192
+```
+
+See on **väärtus 3 aasta pärast**. Küsimus: *mitme euro võrra suureneb* väärtus?
+
+```math
+\Delta A = A_3 - A_0 \approx 34\,192 - 32\,000 = 2\,192
+```
+
+**Vastus 1. ülesandele:** kinnisvara väärtus suureneb kolme aastaga ligikaudu **2 192 euro võrra**.
 
 ---
 
-### Ülesanne 2 — logaritmiline võrrand (detailne, iga sammile viide õpikulehelt)
+## 2. ülesanne – lahendus
 
-**Ülesande tekst:** $ \log_4(3-x)+\log_4(x+2)=1$.
+Lahendada võrrand:
+```math
+\log_4(3 - x) + \log_4(x + 2) = 1
+```
 
-**Samm 1 — kontrollime defineerimispiire (oluline samm enne lahendamist).**  
-Logaritmi argument peab olema positiivne: $3-x>0$ ja $x+2>0$. See annab tingimused:
-```math
-3-x>0 \Rightarrow x<3
-```
-```math
-x+2>0 \Rightarrow x>-2
-```
-Seega lubatud $x$ vahemik on $-2<x<3$.  
-**(Õpikuleht viide:** *Logaritmide defineerimispiirid; enne lahendamist kontrolli argumentide positiivsust.)*
+### 2.1. Määramispiirkond
 
-**Samm 2 — logaritmide liitmise reegel.**  
-Kasutame valemit $ \log_a u + \log_a v = \log_a(uv)$. Seega:
-```math
-\log_4\bigl((3-x)(x+2)\bigr)=1
-```
-**(Õpikuleht viide:** *Logaritmide omadused: summa ? korrutis.)*
+Logaritmi argument peab olema positiivne:
 
-**Samm 3 — teisendus eksponentvõrrandiks.**  
-Kui $\log_4(Y)=1$, siis $Y=4^1=4$. Seega:
-```math
-(3-x)(x+2)=4
-```
-**(Õpikuleht viide:** *Logaritmi ja eksponenti vastastikune seos: $\log_a Y = b \Leftrightarrow Y = a^b$.)*
+- $3 - x > 0 \Rightarrow x < 3$
+- $x + 2 > 0 \Rightarrow x > -2$
 
-**Samm 4 — laiendame ja viime ruutvõrrandi standardkuju.**  
-Laiendame:
+Seega:
 ```math
-(3-x)(x+2) = 3x +6 - x^2 -2x = -x^2 + x +6
+-2 < x < 3
 ```
-Seame võrdseks 4-ga:
+
+Kõik lahendid peavad jääma sellesse vahemikku.
+
+### 2.2. Logaritmide liitmise reegel
+
+Kehtib:
 ```math
--x^2 + x +6 = 4 \quad\Rightarrow\quad -x^2 + x +2 = 0
+\log_a u + \log_a v = \log_a (u \cdot v), \quad u>0, v>0, a>0, a\neq 1
 ```
-Korrutame $-1$-ga, et saada standardne kuju:
+
+Rakendame:
+```math
+\log_4(3 - x) + \log_4(x + 2) = \log_4\big((3 - x)(x + 2)\big)
+```
+
+Seega võrrand muutub:
+```math
+\log_4\big((3 - x)(x + 2)\big) = 1
+```
+
+### 2.3. Logaritmivõrrandi teisendamine
+
+Kui $\log_4 M = 1$, siis:
+```math
+M = 4^1 = 4
+```
+
+Seega:
+```math
+(3 - x)(x + 2) = 4
+```
+
+Laiendame vasaku poole:
+
+```math
+(3 - x)(x + 2) = 3x + 6 - x^2 - 2x = -x^2 + x + 6
+```
+
+Saame võrrandi:
+```math
+-x^2 + x + 6 = 4
+```
+
+Viime kõik ühele poole:
+
+```math
+-x^2 + x + 6 - 4 = 0
+-x^2 + x + 2 = 0
+```
+
+Korrutame võrrandi läbi $-1$-ga (mugavam kuju):
+
 ```math
 x^2 - x - 2 = 0
 ```
-**(Õpikuleht viide:** *Ruutvõrrandi teisendamine standardkujule.)*
 
-**Samm 5 — lahendame ruutvõrrandi diskriminandi abil.**  
+### 2.4. Ruudu­võrrandi lahendamine
+
+Lahendame:
+```math
+x^2 - x - 2 = 0
+```
+
 Diskriminant:
 ```math
-\Delta = b^2 - 4ac = (-1)^2 - 4\cdot1\cdot(-2) = 1 + 8 = 9
+D = b^2 - 4ac = (-1)^2 - 4 \cdot 1 \cdot (-2) = 1 + 8 = 9
 ```
-Juured:
+
 ```math
-x = \frac{-b \pm \sqrt{\Delta}}{2a} = \frac{1 \pm 3}{2}
+\sqrt{D} = 3
 ```
+
+Lahendid:
+```math
+x_{1,2} = \frac{-b \pm \sqrt{D}}{2a} = \frac{1 \pm 3}{2}
+```
+
 Seega:
 ```math
-x_1 = \frac{1+3}{2} = 2,\qquad x_2 = \frac{1-3}{2} = -1
+x_1 = \frac{1 + 3}{2} = 2
 ```
-**(Õpikuleht viide:** *Ruutvõrrandi lahendivalem ja diskriminant.)*
 
-**Samm 6 — kontrollime, kas leitud juured jäävad defineerimisvahemikku.**  
-Meie eelnevalt leitud lubatud vahemik oli $-2<x<3$. Mõlemad juured $x=2$ ja $x=-1$ rahuldavad seda. Samuti kontrollime, et logaritmide argumendid ei muutu nulliks ega negatiivseks:
-- $x=2$: $3-x=1>0$, $x+2=4>0$ — sobib.
-- $x=-1$: $3-(-1)=4>0$, $-1+2=1>0$ — sobib.
+```math
+x_2 = \frac{1 - 3}{2} = -1
+```
 
-**Lõplik vastus:** $x=2$ või $x=-1$.
+### 2.5. Kontroll määramispiirkonnas
+
+Määramispiirkond oli $-2 < x < 3$.
+
+- $x = 2$ ? $-2 < 2 < 3$ – sobib.
+- $x = -1$ ? $-2 < -1 < 3$ – sobib.
+
+Kontrollime ka argumente:
+
+- $x = 2$:  
+  $3 - x = 1 > 0$, $x + 2 = 4 > 0$ – korras.
+- $x = -1$:  
+  $3 - x = 4 > 0$, $x + 2 = 1 > 0$ – korras.
+
+Mõlemad lahendid kehtivad.
+
+**Vastus 2. ülesandele:**
+```math
+x = 2 \quad \text{või} \quad x = -1
+```
 
 ---
 
-## Õpikuleht: **Logaritmid** (lai ja praktiline kokkuvõte — kõik olulised valemid ja reeglid)
+## Teooria ja valemid – 1. ülesande teema (jadad, eriti geomeetriline jada)
 
-**Mis on logaritm?**  
-Logaritm $ \log_a b $ on arv $c$, mis rahuldab $a^c = b$, kus $a>0$, $a\neq1$, ja $b>0$. Seega $ \log_a b = c \Leftrightarrow a^c = b$.
+### Üldine jada
 
-**Põhivalemid ja omadused**
-- **Eksponent-logaritmi vastastikkus:**
-  ```math
-  \log_a b = c \quad\Leftrightarrow\quad a^c = b
-  ```
-- **Toote reegel:**
-  ```math
-  \log_a(uv) = \log_a u + \log_a v
-  ```
-- **Jagatise reegel:**
-  ```math
-  \log_a\!\left(\frac{u}{v}\right) = \log_a u - \log_a v
-  ```
-- **Astme reegel:**
-  ```math
-  \log_a(u^k) = k\log_a u
-  ```
-- **Muudatuse alus (change of base) valem:**
-  ```math
-  \log_a b = \frac{\log_c b}{\log_c a}
-  ```
-  eriti kasulik:
-  ```math
-  \log_a b = \frac{\ln b}{\ln a} = \frac{\log_{10} b}{\log_{10} a}
-  ```
-- **Null ja üks:**
-  ```math
-  \log_a 1 = 0,\qquad \log_a a = 1
-  ```
-- **Defineerimispiir:** argument peab olema positiivne: $u>0$.
+**Jada** on arvude järjestus:
+```math
+a_1, a_2, a_3, \dots
+```
+kus igal kohal on mingi arv $a_n$.
 
-**Logaritmiliste võrrandite lahendamise üldised sammud**
-1. **Kontrolli defineerimispiire:** kõik logaritmi argumendid peavad olema $>0$.
-2. **Kombineeri logaritmid:** kasuta toote/jaotuse/astme reegleid, et vähendada logaritmide arvu.
-3. **Teisenda eksponentvõrrandiks:** kui saad $\log_a(\text{something}) = b$, siis lahenda $\text{something} = a^b$.
-4. **Lahenda saadud algebrailine võrrand** (ruutvõrrand, polünoom jms).
-5. **Kontrolli leitud lahendite sobivust** defineerimispiiriga (välista argumendi =0 juhtumid).
+- **Üldliige:** $a_n$ – jada $n$-s liige.
+- Sageli antakse jada kas:
+   - reegliga $a_n = f(n)$ või
+   - rekursiivselt: $a_{n+1}$ avaldatakse $a_n$ kaudu.
 
-**Logaritmide võrrandite tüübid ja näpunäited**
-- Kui logaritmid on erinevate alustega, kasuta muutmise alusvalemit, et viia samale alusele või kasutada naturaallogaritmi $\ln$.
-- Kui võrrandis on logaritmide summa, proovige kombineerida korrutiseks; kui erinevus, siis jagatise reegel.
-- Kui logaritm on astmes (nt $\log_a(f(x)) = g(x)$), teisenda eksponentvõrrandiks $f(x) = a^{g(x)}$ ja lahenda.
-- Pärast algebrailist lahendamist **kontrolli alati**, et argumendid oleksid positiivsed.
+---
 
-**Logaritmide seosed eksponentidega (kasulik mõistmiseks)**
-- Eksponentsed kasvumudelid $y = a^x$ ja logaritmilised mudelid $x = \log_a y$ on üksteise pöördfunktsioonid.
-- Kui lahendad võrrandeid, kus muutuja on eksponendis, kasuta logaritmi; kui muutuja on logaritmis, teisenda eksponendiks.
+### Aritmeetiline jada
 
-**Näited (kiirülevaade)**
-- Lahenda $\log_2(x-1) + \log_2(x+3) = 3$.  
-  *Kombineeri:* $\log_2\bigl((x-1)(x+3)\bigr)=3 \Rightarrow (x-1)(x+3)=8$; lahenda polünoom; kontrolli $x$-i, et argumendid oleksid positiivsed.
-- Lahenda $\log_3(x) - \log_3(2x-1) = 1$.  
-  *Kombineeri:* $\log_3\!\left(\dfrac{x}{2x-1}\right)=1 \Rightarrow \dfrac{x}{2x-1}=3 \Rightarrow x=3(2x-1)$; lahenda ja kontrolli.
+**Aritmeetiline jada** – järjestikuste liikmete vahe on konstantne.
 
-**Logaritmide graafik ja käitumine (lühike)**
-- Kui alus $a>1$, siis $\log_a x$ on kasvav funktsioon; kui $0<a<1$, siis $\log_a x$ on kahanev.
-- $\log_a x$ on defineeritud ainult $x>0$, läheneb $-\infty$ kui $x\to0^+$ ja läheneb $\infty$ kui $x\to\infty$ (kui $a>1$).
+- **Definitsioon:**
+```math
+a_{n+1} = a_n + d
+```
+  kus $d$ on **vahe** (konstantne arv).
 
-**Kasutusvaldkonnad ja miks neid vaja on**
-- Logaritme kasutatakse eksponentsiaalse kasvu ja kahanemise modelleerimisel (nt intressid, radioaktiivne lagunemine), skaalade teisendamisel (detsibelid, pH), ning võrrandite lahendamisel, kus muutuja on eksponendis.
+- **Üldliige:**
+```math
+a_n = a_1 + (n - 1)d
+```
+
+- **Esimese $n$ liikme summa:**
+```math
+S_n = \frac{n}{2}(a_1 + a_n)
+```
+  või
+```math
+S_n = \frac{n}{2}\big(2a_1 + (n - 1)d\big)
+```
+
+---
+
+### Geomeetriline jada
+
+**Geomeetriline jada** – järjestikuste liikmete suhe on konstantne.
+
+- **Definitsioon:**
+```math
+a_{n+1} = a_n \cdot q
+```
+  kus $q$ on **suhe** (geomeetriline tegur).
+
+- **Üldliige:**
+```math
+a_n = a_1 \cdot q^{n-1}
+```
+
+- **Esimese $n$ liikme summa (kui $q \neq 1$):**
+```math
+S_n = a_1 \cdot \frac{q^n - 1}{q - 1}
+```
+
+---
+
+### Seos protsendikasvuga ja geomeetrilise jadaga
+
+Kui mingi suurus kasvab igal aastal sama protsendi võrra, siis:
+
+- Olgu algväärtus $A_0$.
+- Aastane kasvuprotsent $p\%$.
+- Aastane kasvutegur:
+```math
+q = 1 + \frac{p}{100}
+```
+- Pärast $n$ aastat:
+```math
+A_n = A_0 \cdot q^n
+```
+
+Kui küsitakse **kui palju suureneb** väärtus, siis:
+```math
+\Delta A = A_n - A_0
+```
+
+See on täpselt sama kuju, mida kasutasime 1. ülesandes.
+
+---
+
+### Üldine jada ja rekursiivsed seosed
+
+Mõnikord antakse jada **rekursiivselt**:
+
+- Näiteks:
+```math
+a_{n+1} = a_n + d \quad \text{(aritmeetiline)}
+```
+```math
+a_{n+1} = a_n \cdot q \quad \text{(geomeetriline)}
+```
+
+Oluline on aru saada, kas jada kasvab **liitmisega** (aritmeetiline) või **korrutamisega** (geomeetriline). Protsendid ? korrutamine ? geomeetriline jada.
+
+---
+
+## Teooria ja valemid – 2. ülesande teema (logaritmid ja logaritmivõrrandid)
+
+### Logaritmi mõiste
+
+Olgu $a > 0$, $a \neq 1$ ja $b > 0$. Siis:
+```math
+\log_a b = x \quad \Leftrightarrow \quad a^x = b
+```
+
+See tähendab: $\log_a b$ on see astendaja, millega tuleb $a$ astendada, et saada $b$.
+
+---
+
+### Põhireeglid
+
+Olgu $a > 0$, $a \neq 1$, $u>0$, $v>0$.
+
+1. **Korrutise logaritm:**
+```math
+\log_a(uv) = \log_a u + \log_a v
+```
+
+2. **Jagatise logaritm:**
+```math
+\log_a\left(\frac{u}{v}\right) = \log_a u - \log_a v
+```
+
+3. **Astme logaritm:**
+```math
+\log_a(u^k) = k \cdot \log_a u
+```
+
+4. **Aluse vahetuse valem:**
+```math
+\log_a b = \frac{\log_c b}{\log_c a}
+```
+   (kus $c$ on suvaline sobiv alus, näiteks $10$ või $e$).
+
+---
+
+### Logaritmivõrrandid
+
+Üldine idee: logaritmivõrrandi lahendamiseks püütakse:
+
+- viia logaritmid **ühele poole**,
+- kasutada reegleid (nt korrutise logaritm),
+- lõpuks saada **tavaline võrrand** (tihti astme- või ruutvõrrand).
+
+**Oluline:** alati kontrollida **määramispiirkonda** – logaritmi argument peab olema **positiivne**.
+
+---
+
+### Määramispiirkond logaritmides
+
+Kui võrrandis esineb $\log_a f(x)$, siis peab kehtima:
+```math
+f(x) > 0
+```
+
+Kui on mitu logaritmi, näiteks:
+```math
+\log_a f(x) + \log_a g(x)
+```
+siis peab kehtima:
+```math
+f(x) > 0 \quad \text{ja} \quad g(x) > 0
+```
+
+Need tingimused tuleb **enne** lahendamist kirja panna ja lõpus kontrollida, et leitud lahendid neid ei rikuks.
+
+---
+
+### Tüüpiline logaritmivõrrandi lahendamise skeem
+
+Näiteks:
+```math
+\log_a f(x) + \log_a g(x) = k
+```
+
+1. **Määramispiirkond:**
+```math
+f(x) > 0, \quad g(x) > 0
+```
+
+2. **Korrutise reegel:**
+```math
+\log_a(f(x)g(x)) = k
+```
+
+3. **Logaritmi definitsioon:**
+```math
+f(x)g(x) = a^k
+```
+
+4. Saadud võrrand on tavaliselt **polünoomvõrrand** (nt ruutvõrrand), mille lahendad tavaliste meetoditega.
+
+5. **Kontroll:** kas lahendid kuuluvad määramispiirkonda.
+
+---
+
+### Ruutvõrrandi meeldetuletus
+
+Kui:
+```math
+ax^2 + bx + c = 0, \quad a \neq 0
+```
+siis:
+
+- **Diskriminant:**
+```math
+D = b^2 - 4ac
+```
+
+- **Lahendid:**
+```math
+x_{1,2} = \frac{-b \pm \sqrt{D}}{2a}
+```
+
+Kui $D > 0$ – kaks erinevat lahendit,  
+$D = 0$ – üks lahend (topeltjuur),  
+$D < 0$ – reaalseid lahendeid ei ole.
 
 ---

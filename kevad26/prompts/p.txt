@@ -5,3 +5,12 @@ can you extract exercises and solutions (if present - if not solve yourself) fro
 f(x) = ax^2 + bx + c,\quad a \neq 0
 ```
 
+
+
+
+
+can you extract exercises from here (1st and 2nd). And then solve both. emit your output so that math is expressed like in "math" block below, and inline math is presented between dollar signs (I will render it via github readme). after both solutions, add as if pages from textbook, necessary for this type of exercises, all formulas and short theory. There should be 2 blocks of textbook pages (separate for 1st and 2nd exercise, because they are about different topics). Write the text in Estonian . print the exercise itself at the beginning It is for someone prepping for an exam (attempting to go to uni), but her math is weak tbh . I think 1st should link to "geomeetriline jada", but in its textbook section give all "jada" related formulas (not just geometric). Same with 2nd, try to infer all formulas in the area (it's the level of entering uni)
+
+```math
+f(x) = ax^2 + bx + c,\quad a \neq 0
+```
