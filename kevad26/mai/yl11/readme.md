@@ -12,9 +12,9 @@
 
 - Võidusumma: $48\,000$ eurot
 - Kaks kolmandikku kinnisvara ostuks:
-  ```math
-  \frac{2}{3} \cdot 48\,000 = 32\,000
-  ```  
+```math
+\frac{2}{3} \cdot 48\,000 = 32\,000
+```  
   Seega algväärtus $A_0 = 32\,000$ eurot.
 - Aastane kasv: $2{,}25\% = 0{,}0225$
 - Aastate arv: $n = 3$
