@@ -13,6 +13,9 @@ Siin on lahendused koos "õpikulehekülgedega", mis aitavad reegleid meelde tule
 
 ## Ülesanne 5: Avaldiste lihtsustamine
 
+1. Lihtsusta avaldised $A = \frac{3a^2 - 9ab}{a^2 - 2ab + b^2} : \left( \frac{a}{2a + 2b} - \frac{ab}{a^2 - b^2} \right)$ ja $B = 2(\sqrt{x} + 2)(\sqrt{x} - 2)$.
+2. Arvuta avaldiste $A$ ja $B$ väärtused, kui $a = \log_3 81$, $b = 1,5^{-1}$ ja $x = 7,5$.
+
 **1. Lihtsustame avaldise $A$:**
 Kõigepealt tegurdame kõik osad, kus võimalik.
 Lugejas $3a^2 - 9ab = 3a(a - 3b)$.
@@ -61,7 +64,7 @@ B = 2(7,5 - 4) = 2 \cdot 3,5 = 7
 
 ---
 
-### ?? Abimees: Algebralised avaldised
+### 📖 Abimees: Algebralised avaldised
 
 * **Korrutamise abivalemid:**
 * Ruutude vahe: $a^2 - b^2 = (a - b)(a + b)$
@@ -78,6 +81,15 @@ B = 2(7,5 - 4) = 2 \cdot 3,5 = 7
 ---
 
 ## Ülesanne 6: Funktsiooni tuletis ja puutuja
+
+Joonisel on funktsiooni $f(x) = x^3 - 6x^2 + 9x - 1$ graafik ja kolm selle graafiku puutujat, mille tõusud on **-1**, **1,5** ja **3**.
+
+1. Märkige iga puutuja juurde selle tõus.
+2. Leidke funktsiooni $f(x)$:
+* 1. tuletis;
+* 2. kasvamis- ja kahanemisvahemikud.
+
+![img.png](img.png)
 
 **1. Puutujate tõusud joonisel:**
 Tõus $k$ näitab, kui järsult sirge tõuseb või langeb.
@@ -118,7 +130,7 @@ y - 3 = 9(x - 4) \Rightarrow y = 9x - 36 + 3 \Rightarrow y = 9x - 33
 
 ---
 
-### ?? Abimees: Tuletis ja puutuja
+### 📖 Abimees: Tuletis ja puutuja
 
 * **Tuletise reeglid:**
 * $(x^n)' = n \cdot x^{n-1}$
@@ -132,6 +144,14 @@ y - 3 = 9(x - 4) \Rightarrow y = 9x - 36 + 3 \Rightarrow y = 9x - 33
 ---
 
 ## Ülesanne 7: Trigonomeetria
+
+### **Ülesanne 7**
+
+Aiamaa krunt on kolmnurgakujuline. Krundi külje $AB$ pikkus on **20 m**, külje $AC$ pikkus on **30 m** ja nende külgede vaheline nurk on **50°**.
+
+1. Tehke tekstile vastav joonis.
+2. Arvutage krundi ümbermõõt ja pindala.
+3. Krundile on paigutatud kaks aiavalgustit. Üks neist asub tipus $A$ ja teine küljel $BC$ täpselt **9 m** kaugusel tipust $C$. Arvutage, kui kaugel asuvad valgustid teineteisest.
 
 **1. Joonis:**
 Joonesta kolmnurk $ABC$, kus nurk $A$ on 50°. Küljed $AB = 20$ m ja $AC = 30$ m.
@@ -168,7 +188,7 @@ $AD^2 \approx 900 + 81 - 540 \cdot 0,7455 \approx 578,43 \Rightarrow AD \approx 
 
 ---
 
-### ?? Abimees: Trigonomeetria kolmnurgas
+### 📖 Abimees: Trigonomeetria kolmnurgas
 
 * **Koosinusteoreem:** $a^2 = b^2 + c^2 - 2bc \cos \alpha$ (kasuta kahe külje ja nendevahelise nurga puhul).
 * **Siinusteoreem:** $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$.
@@ -177,6 +197,16 @@ $AD^2 \approx 900 + 81 - 540 \cdot 0,7455 \approx 578,43 \Rightarrow AD \approx 
 ---
 
 ## Ülesanne 9: Elektripaketid ja võrrandisüsteem
+
+### **Ülesanne 9**
+
+Fikseeritud hinnaga elektripaketis on elektri ühe kilovatt-tunni (kWh) hind päevatariifi järgi **14 senti** ja öötariifi järgi **11 senti**. Selle paketi valinud majaomanikul tuli septembris maksta elektri eest **42,94 eurot** ja oktoobris **73,84 eurot**.
+
+Septembris oli tema majapidamise päevane elektritarbimine **40 kWh** võrra väiksem kui oktoobris ja öine elektritarbimine **kaks korda väiksem** kui oktoobris.
+
+Mitu kilovatt-tundi elektrit tarbis majaomanik kummaski kuus?
+
+---
 
 Olgu oktoobri päevane tarbimine $x$ kWh ja öine $y$ kWh.
 Hinnad eurodes: päev 0,14 €/kWh ja öö 0,11 €/kWh.
@@ -211,7 +241,7 @@ $0,14x + 0,11 \cdot 460 = 73,84 \Rightarrow 0,14x + 50,6 = 73,84 \Rightarrow 0,1
 
 ---
 
-### ?? Abimees: Võrrandisüsteemid
+### 📖 Abimees: Võrrandisüsteemid
 
 * **Tekstülesande lahendamine:**
 1. Vali tundmatud ($x$ ja $y$).
@@ -222,53 +252,3 @@ $0,14x + 0,11 \cdot 460 = 73,84 \Rightarrow 0,14x + 50,6 = 73,84 \Rightarrow 0,1
 * **Liitmisvõte:** Korruta võrrandeid nii, et ühe muutuja kordajad oleksid vastandarvud, ja liida võrrandid kokku, et see muutuja kaoks.
 
 ---
-
-
-
-
-### **Ülesanne 5**
-
-1. Lihtsusta avaldised $A = \frac{3a^2 - 9ab}{a^2 - 2ab + b^2} : \left( \frac{a}{2a + 2b} - \frac{ab}{a^2 - b^2} \right)$ ja $B = 2(\sqrt{x} + 2)(\sqrt{x} - 2)$.
-2. Arvuta avaldiste $A$ ja $B$ väärtused, kui $a = \log_3 81$, $b = 1,5^{-1}$ ja $x = 7,5$.
-
----
-
-### **Ülesanne 6**
-
-Joonisel on funktsiooni $f(x) = x^3 - 6x^2 + 9x - 1$ graafik ja kolm selle graafiku puutujat, mille tõusud on **-1**, **1,5** ja **3**.
-
-1. Märkige iga puutuja juurde selle tõus.
-2. Leidke funktsiooni $f(x)$:
-* 1. tuletis;
-* 2. kasvamis- ja kahanemisvahemikud.
-
-
-3. Koostage funktsiooni $f(x)$ graafiku puutuja võrrand kohal $x_0 = 4$.
-
-> **Kirjeldus failile `yl6_img.jpg`:**
-> Graafikul on kujutatud kuupfunktsiooni $f(x)$ kõver, millel on kolm sirgjoonelist puutujat.
-> * **Vasakpoolne puutuja** puutub graafikut selle esimesel tõusval osal (enne esimest harja). See on järsu positiivse tõusuga sirge. (Selle tõus $k = 3$).
-> * **Keskmine puutuja** puutub graafikut selle langeval osal (kahe harja vahel). See on languse suunaga sirge. (Selle tõus $k = -1$).
-> * **Parempoolne puutuja** puutub graafikut selle teisel tõusval osal (pärast teist harja). See on laugema positiivse tõusuga sirge. (Selle tõus $k = 1,5$).
->
->
-
----
-
-### **Ülesanne 7**
-
-Aiamaa krunt on kolmnurgakujuline. Krundi külje $AB$ pikkus on **20 m**, külje $AC$ pikkus on **30 m** ja nende külgede vaheline nurk on **50°**.
-
-1. Tehke tekstile vastav joonis.
-2. Arvutage krundi ümbermõõt ja pindala.
-3. Krundile on paigutatud kaks aiavalgustit. Üks neist asub tipus $A$ ja teine küljel $BC$ täpselt **9 m** kaugusel tipust $C$. Arvutage, kui kaugel asuvad valgustid teineteisest.
-
----
-
-### **Ülesanne 9**
-
-Fikseeritud hinnaga elektripaketis on elektri ühe kilovatt-tunni (kWh) hind päevatariifi järgi **14 senti** ja öötariifi järgi **11 senti**. Selle paketi valinud majaomanikul tuli septembris maksta elektri eest **42,94 eurot** ja oktoobris **73,84 eurot**.
-
-Septembris oli tema majapidamise päevane elektritarbimine **40 kWh** võrra väiksem kui oktoobris ja öine elektritarbimine **kaks korda väiksem** kui oktoobris.
-
-Mitu kilovatt-tundi elektrit tarbis majaomanik kummaski kuus?
