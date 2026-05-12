@@ -261,22 +261,7 @@ $0,14x + 0,11 \cdot 460 = 73,84 \Rightarrow 0,14x + 50,6 = 73,84 \Rightarrow 0,1
 
 ---
 
-### 1. Joonis (SVG)
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="320" viewBox="-5 -5 45 35">
-  <style>text{font:10px sans-serif}</style>
-  <!-- punktide koordinaadid (m): A=(0,0), B=(20,0), C=(19.2836,22.9813), D˜(19.5641,13.9857) -->
-  <polygon points="0,0 20,0 19.2836,22.9813" fill="none" stroke="#000" stroke-width="0.2"/>
-  <circle cx="0" cy="0" r="0.3" fill="#000"/><text x="0.6" y="0.6">A</text>
-  <circle cx="20" cy="0" r="0.3" fill="#000"/><text x="20.6" y="0.6">B</text>
-  <circle cx="19.2836" cy="22.9813" r="0.3" fill="#000"/><text x="19.9" y="23.6">C</text>
-  <circle cx="19.5641" cy="13.9857" r="0.25" fill="#f00"/><text x="19.9" y="14.3" fill="#f00">D</text>
-  <!-- mõõdud -->
-  <line x1="0" y1="0" x2="20" y2="0" stroke="#00f" stroke-width="0.1"/><text x="9" y="-0.8" fill="#00f">AB=20</text>
-  <line x1="0" y1="0" x2="19.2836" y2="22.9813" stroke="#00f" stroke-width="0.1"/><text x="8" y="12" fill="#00f">AC=30</text>
-  <line x1="20" y1="0" x2="19.2836" y2="22.9813" stroke="#00f" stroke-width="0.1"/><text x="19" y="11" fill="#00f">BC˜22.999</text>
-</svg>
-```
+![img_1.png](img_1.png)
 
 
 
