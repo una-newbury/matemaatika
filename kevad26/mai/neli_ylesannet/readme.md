@@ -252,3 +252,85 @@ $0,14x + 0,11 \cdot 460 = 73,84 \Rightarrow 0,14x + 50,6 = 73,84 \Rightarrow 0,1
 * **Liitmisvõte:** Korruta võrrandeid nii, et ühe muutuja kordajad oleksid vastandarvud, ja liida võrrandid kokku, et see muutuja kaoks.
 
 ---
+
+
+
+**Lühike vastus:** **Kolmnurga külg $BC$ on** \(a=\sqrt{400+900-1200\cos50^\circ}\approx 22{,}999\ \text{m}\). **Ümbermõõt** \(P\approx 73{,}000\ \text{m}\). **Pindala** \(S=\tfrac12\cdot20\cdot30\sin50^\circ\approx229{,}813\ \text{m}^2\). **Valgustite vaheline kaugus** \(AD\approx24{,}057\ \text{m}\).
+
+> Dokumendist: *"Leiame külje $BC$ (tähistame $a$) koosinusteoreemiga: $a^2 = 20^2 + 30^2 - 2\cdot20\cdot30\cdot\cos 50^\circ$."*
+
+---
+
+### 1. Joonis (SVG)
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="320" viewBox="-5 -5 45 35">
+  <style>text{font:10px sans-serif}</style>
+  <!-- punktide koordinaadid (m): A=(0,0), B=(20,0), C=(19.2836,22.9813), D˜(19.5641,13.9857) -->
+  <polygon points="0,0 20,0 19.2836,22.9813" fill="none" stroke="#000" stroke-width="0.2"/>
+  <circle cx="0" cy="0" r="0.3" fill="#000"/><text x="0.6" y="0.6">A</text>
+  <circle cx="20" cy="0" r="0.3" fill="#000"/><text x="20.6" y="0.6">B</text>
+  <circle cx="19.2836" cy="22.9813" r="0.3" fill="#000"/><text x="19.9" y="23.6">C</text>
+  <circle cx="19.5641" cy="13.9857" r="0.25" fill="#f00"/><text x="19.9" y="14.3" fill="#f00">D</text>
+  <!-- mõõdud -->
+  <line x1="0" y1="0" x2="20" y2="0" stroke="#00f" stroke-width="0.1"/><text x="9" y="-0.8" fill="#00f">AB=20</text>
+  <line x1="0" y1="0" x2="19.2836" y2="22.9813" stroke="#00f" stroke-width="0.1"/><text x="8" y="12" fill="#00f">AC=30</text>
+  <line x1="20" y1="0" x2="19.2836" y2="22.9813" stroke="#00f" stroke-width="0.1"/><text x="19" y="11" fill="#00f">BC˜22.999</text>
+</svg>
+```
+
+
+
+
+---
+
+### 2. Arvutused ja täpsemad väljendid
+**Külje \(BC\) leidmine (koosinusteoreem):**
+```math
+a^2 = 20^2 + 30^2 - 2\cdot20\cdot30\cos50^\circ
+```
+Seega
+```math
+a=\sqrt{1300-1200\cos50^\circ}\approx22{,}999021\ \text{m}.
+```
+
+**Ümbermõõt:**
+```math
+P=20+30+a\approx72{,}999021\ \text{m}\approx73{,}000\ \text{m}.
+```
+
+**Pindala (SAS-formel):**
+```math
+S=\tfrac12\cdot AB\cdot AC\cdot\sin50^\circ=\tfrac12\cdot20\cdot30\sin50^\circ
+```
+```math
+S=300\sin50^\circ\approx229{,}813\ \text{m}^2.
+```
+
+---
+
+### 3. Valgustite vahe (punktid A ja D, kus \(CD=9\))
+Esmalt leiame nurga \(C\) (Law of Sines):
+```math
+\frac{\sin C}{AB}=\frac{\sin50^\circ}{a}\quad\Rightarrow\quad
+\sin C=\frac{20\sin50^\circ}{a}\approx0{,}666556
+```
+```math
+C\approx\arcsin(0{,}666556)\approx41{,}810^\circ.
+```
+Seejärel kolmnurgas \(ADC\) (küljed \(AC=30\), \(CD=9\), nurk \(\angle C\)):
+```math
+AD^2=30^2+9^2-2\cdot30\cdot9\cos C
+```
+```math
+AD=\sqrt{981-540\cos C}\approx24{,}057\ \text{m}.
+```
+
+---
+
+### Õpiku lehekülg (vajalikud valemid ja näpunäited)
+- **Koosinusteoreem:** \(c^2=a^2+b^2-2ab\cos\gamma\).
+- **Siinusteoreem:** \(\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}\).
+- **Pindala (SAS):** \(S=\tfrac12 ab\sin\gamma\).
+- **Heroni valem (kui on 3 külge):** \(S=\sqrt{s(s-a)(s-b)(s-c)}\), kus \(s=\tfrac{a+b+c}{2}\).
+- **Näpunäide eksamiks:** kirjuta alati ära, millist teoreemi kasutad, too välja täpsed algebrailised väljendid (näiteks \(a=\sqrt{1300-1200\cos50^\circ}\)) ja alles seejärel arvuta numbriliselt; see annab punkte ka siis, kui kalkulaatori viimased numbrid veidi erinevad.
+- 
