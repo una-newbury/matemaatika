@@ -156,6 +156,8 @@ Aiamaa krunt on kolmnurgakujuline. Krundi külje $AB$ pikkus on **20 m**, külje
 **1. Joonis:**
 Joonesta kolmnurk $ABC$, kus nurk $A$ on 50°. Küljed $AB = 20$ m ja $AC = 30$ m.
 
+![img_1.png](img_1.png)
+
 **2. Ümbermõõt ja pindala:**
 Leiame külje $BC$ (tähistame $a$) koosinusteoreemiga:
 
@@ -252,69 +254,3 @@ $0,14x + 0,11 \cdot 460 = 73,84 \Rightarrow 0,14x + 50,6 = 73,84 \Rightarrow 0,1
 * **Liitmisvõte:** Korruta võrrandeid nii, et ühe muutuja kordajad oleksid vastandarvud, ja liida võrrandid kokku, et see muutuja kaoks.
 
 ---
-
-
-
-**Lühike vastus:** **Kolmnurga külg $BC$ on** $a=\sqrt{400+900-1200\cos50^\circ}\approx 22{,}999\ \text{m}$. **Ümbermõõt** $P\approx 73{,}000\ \text{m}$. **Pindala** $S=\tfrac12\cdot20\cdot30\sin50^\circ\approx229{,}813\ \text{m}^2$. **Valgustite vaheline kaugus** $AD\approx24{,}057\ \text{m}$.
-
-> Dokumendist: *"Leiame külje $BC$ (tähistame $a$) koosinusteoreemiga: $a^2 = 20^2 + 30^2 - 2\cdot20\cdot30\cdot\cos 50^\circ$."*
-
----
-
-![img_1.png](img_1.png)
-
-
-
-
----
-
-### 2. Arvutused ja täpsemad väljendid
-**Külje $BC$ leidmine (koosinusteoreem):**
-```math
-a^2 = 20^2 + 30^2 - 2\cdot20\cdot30\cos50^\circ
-```
-Seega
-```math
-a=\sqrt{1300-1200\cos50^\circ}\approx22{,}999021\ \text{m}.
-```
-
-**Ümbermõõt:**
-```math
-P=20+30+a\approx72{,}999021\ \text{m}\approx73{,}000\ \text{m}.
-```
-
-**Pindala (SAS-formel):**
-```math
-S=\tfrac12\cdot AB\cdot AC\cdot\sin50^\circ=\tfrac12\cdot20\cdot30\sin50^\circ
-```
-```math
-S=300\sin50^\circ\approx229{,}813\ \text{m}^2.
-```
-
----
-
-### 3. Valgustite vahe (punktid A ja D, kus $CD=9$)
-Esmalt leiame nurga $C$ (Law of Sines):
-```math
-\frac{\sin C}{AB}=\frac{\sin50^\circ}{a}\quad\Rightarrow\quad
-\sin C=\frac{20\sin50^\circ}{a}\approx0{,}666556
-```
-```math
-C\approx\arcsin(0{,}666556)\approx41{,}810^\circ.
-```
-Seejärel kolmnurgas $ADC$ (küljed $AC=30$, $CD=9$, nurk $\angle C$):
-```math
-AD^2=30^2+9^2-2\cdot30\cdot9\cos C
-```
-```math
-AD=\sqrt{981-540\cos C}\approx24{,}057\ \text{m}.
-```
-
----
-
-### Õpiku lehekülg (vajalikud valemid ja näpunäited)
-- **Koosinusteoreem:** $c^2=a^2+b^2-2ab\cos\gamma$.
-- **Siinusteoreem:** $\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}$.
-- **Pindala (SAS):** $S=\tfrac12 ab\sin\gamma$.
-- **Heroni valem (kui on 3 külge):** $S=\sqrt{s(s-a)(s-b)(s-c)}$, kus $s=\tfrac{a+b+c}{2}$.
-- **Näpunäide eksamiks:** kirjuta alati ära, millist teoreemi kasutad, too välja täpsed algebrailised väljendid (näiteks $a=\sqrt{1300-1200\cos50^\circ}$) ja alles seejärel arvuta numbriliselt; see annab punkte ka siis, kui kalkulaatori viimased numbrid veidi erinevad.
