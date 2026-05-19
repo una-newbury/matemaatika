@@ -14,3 +14,11 @@ can you extract exercises from here (1st and 2nd). And then solve both. emit you
 ```math
 f(x) = ax^2 + bx + c,\quad a \neq 0
 ```
+
+
+
+can you extract exercises from here (1st and 2nd). And then solve both. emit your output so that math is expressed like in "math" block below, and inline math is presented between dollar signs (I will render it via github readme). after  solutions, add as if pages from textbook, necessary for this type of exercises, all formulas and short theory. Write the text in Estonian . print the exercise itself at the beginning. It is for someone prepping for an exam (attempting to go to uni), but her math is weak tbh .
+
+```math
+f(x) = ax^2 + bx + c,\quad a \neq 0
+```
